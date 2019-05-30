@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    
+    "command": "mix",
+    "tasks": [
+    {
+        "label": "Build",
+        "type": "process",
+        "type": "shell",
+        "args": [
+          "compile"
+        ],
+        "problemMatcher": [
+          "$mixCompileError",
+          "$mixCompileWarning"
+        ],
+        "group":{
+            "kind": "build",
+            "isDefault": true
+        }
+      },
+      {
+        "label": "Test",
+        "command": "mix",
+        "type": "process",
+        "args": [
+          "test"
+        ],
+        "problemMatcher": [
+          "$mixCompileError",
+          "$mixCompileWarning"
+        ],
+        "group":{
+            "kind": "test",
+            "isDefault": true
+        }       
+      }     
+    ]
+  } 
